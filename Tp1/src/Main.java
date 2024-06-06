@@ -9,6 +9,10 @@ public class Main {
         Peleador peleador2 = new Peleador("Porier", 35, 70, 175);
         Peleador peleador3 = new Peleador("Oliveira", 34, 70, 178);
         Peleador peleador4 = new Peleador("Holloway", 35, 68, 180);
+        Peleador peleador5 = new Peleador("Gaethje", 35, 70, 180);
+        Peleador peleador6 = new Peleador("Nurmagomedov", 35, 70, 178);
+        Peleador peleador7 = new Peleador("Diaz", 39, 71, 183);
+        Peleador peleador8 = new Peleador("Ferguson", 40, 71, 180);
 
         String[] opciones = {"Iniciar Pelea", "Agregar Luchador", "Salir"};
 
@@ -17,6 +21,10 @@ public class Main {
         gestor.getPeleadores().add(peleador2);
         gestor.getPeleadores().add(peleador3);
         gestor.getPeleadores().add(peleador4);
+        gestor.getPeleadores().add(peleador5);
+        gestor.getPeleadores().add(peleador6);
+        gestor.getPeleadores().add(peleador7);
+        gestor.getPeleadores().add(peleador8);
 
         int opcion = 0;
         do {
