@@ -2,7 +2,29 @@ import javax.swing.JOptionPane;
 
 public class Pelea {
 
-        public Peleador IniciarPelea(Peleador peleador1, Peleador peleador2) {
+	private Peleador peleador1;
+	private String evento;
+	
+	
+	
+	
+        public Pelea(Peleador peleador1, String evento) {
+		super();
+		this.peleador1 = peleador1;
+		this.evento = evento;
+		
+		
+    	}
+        public Pelea() {
+        	
+    
+        	
+        }
+
+
+
+
+		public Peleador IniciarPelea(Peleador peleador1, Peleador peleador2) {
             
             int resultado = (int) (Math.random()*10) + 1;
             int round = (int) (Math.random()*3) + 1;

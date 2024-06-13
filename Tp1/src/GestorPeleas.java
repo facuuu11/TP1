@@ -36,7 +36,7 @@ public class GestorPeleas {
         int peso=0;
         do {
             peso = Integer.parseInt(JOptionPane.showInputDialog("Ingresar peso"));
-        } while (peso < 68 || peso > 71);
+        } while (peso < 68 || peso > 130);
         
         int altura=0;
         do {
@@ -45,6 +45,18 @@ public class GestorPeleas {
         
         Peleador nuevo = new Peleador(nombre,edad,peso,altura);
         peleadores.add(nuevo);
+    }
+
+    public String asignarCategoria(int peso) {
+        if (peso >= 68 && peso <= 71) {
+            return "Ligero";
+        } else if (peso >= 77 && peso <= 80) {
+            return "Welter";
+        } else if (peso >= 95 && peso <= 130) {
+            return "Pesado";
+        } else {
+            return "Categoría no definida";
+        }
     }
 }
 
